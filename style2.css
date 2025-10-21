@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: #595454;
 }
 
 nav {
@@ -37,7 +37,13 @@ nav a[aria-current='page'] {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 3.5rem);
   padding: 1rem;
+  text-align: center;
 }
 
 h1 {
@@ -45,17 +51,3 @@ h1 {
   font-size: 1.5rem;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-}
-
-.project-link {
-  background-color: #fff;
-  padding: 10px 30px;
-  border-radius: 8px;
-  color: #212121;
-  text-decoration: none;
-  border: 2px solid #212121;
-  margin-top: 5px;
-}
